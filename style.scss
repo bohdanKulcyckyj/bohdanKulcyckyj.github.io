@@ -127,7 +127,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $backgMT;
+  background-color: #2d3130;
   background-image: url("./assets/parallax/paralax1.jpg");
   background-size: cover;
   background-position: bottom;
@@ -154,7 +154,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #22211c65;
+    background-color: #2d313055;
     font-family: Kanit;
     #landing-p1 {
       margin-bottom: 0.8rem;
@@ -373,7 +373,7 @@ body {
     //right: 0;
     width: 100%;
     height: 100%;
-    background-color: #22211c65;
+    background-color: #2d313055;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
@@ -876,11 +876,11 @@ body {
       margin: 0 0 2rem;
       .about-text {
         h1 {
-          font-size: 1.2rem;
+          font-size: 1.5rem;
           margin-bottom: 1.5rem;
         }
         p {
-          font-size: 0.9rem;
+          font-size: 1.2rem;
         }
       }
       .about-image {
@@ -901,6 +901,9 @@ body {
     .projects-container {
       width: 100%;
       padding: 4rem 0;
+      h1 {
+        font-size: 1.5rem;
+      }
       .cards {
         margin: 3rem auto;
         grid-template-columns: repeat(1, 280px) !important;
@@ -915,7 +918,7 @@ body {
       display: none;
     }
     h1 {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
     .contact-container {
       width: 90%;

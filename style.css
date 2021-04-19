@@ -145,7 +145,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #27272b88;
+  background-color: #2d3130;
   background-image: url("./assets/parallax/paralax1.jpg");
   background-size: cover;
   background-position: bottom;
@@ -184,7 +184,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #22211c65;
+  background-color: #2d313055;
   font-family: Kanit;
 }
 
@@ -482,7 +482,7 @@ body {
 #projects .projects-container {
   width: 100%;
   height: 100%;
-  background-color: #22211c65;
+  background-color: #2d313055;
   padding: 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1085,11 +1085,11 @@ body {
     margin: 0 0 2rem;
   }
   #about .about-container .about-text h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
   #about .about-container .about-text p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   #about .about-container .about-image {
     margin: 0;
@@ -1108,6 +1108,9 @@ body {
     width: 100%;
     padding: 4rem 0;
   }
+  #projects .projects-container h1 {
+    font-size: 1.5rem;
+  }
   #projects .projects-container .cards {
     margin: 3rem auto;
     -ms-grid-columns: (280px)[1] !important;
@@ -1122,7 +1125,7 @@ body {
     display: none;
   }
   #contact h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   #contact .contact-container {
     width: 90%;
