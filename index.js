@@ -43,7 +43,7 @@ printString();
 
 const addIcons = () => {
     for(let i in icons) {
-        let row = `<div class="icon-container"><img src="./assets/${icons[i]}" alt="${icons[i]}" title="${icons[i].slice(0, icons[i].length - 4)}" /></div>`;
+        let row = `<div class="icon-container"><img src="./assets/techs/${icons[i]}" alt="${icons[i]}" title="${icons[i].slice(0, icons[i].length - 4)}" /></div>`;
         iconsContainer.innerHTML += row;
     }
 }
