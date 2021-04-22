@@ -39,7 +39,6 @@ const printString = () => {
     setTimeout(printString, delay);
     return;
 }
-printString();
 
 const addIcons = () => {
     for(let i in icons) {
@@ -47,6 +46,7 @@ const addIcons = () => {
         iconsContainer.innerHTML += row;
     }
 }
+
 addIcons();
 
 const navigateSmooth = (id) => {
@@ -85,6 +85,10 @@ window.addEventListener("scroll", () => {
         console.log("Home");
         chooseActiveNavLink(landingLink);
     }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    printString();
 });
 
 document.querySelector("#logo").addEventListener("click", () => {

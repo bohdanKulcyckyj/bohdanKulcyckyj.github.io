@@ -124,10 +124,11 @@ body {
 
 #header .header-container #menu-btn-container #menu-btn {
   font-size: 2rem;
+  color: #0ee09a;
 }
 
 #header .header-container #menu-btn-container #menu-btn:hover {
-  color: #0ee09a;
+  color: white;
 }
 
 #landing {
@@ -190,20 +191,19 @@ body {
 
 #landing #landing-text #landing-p1 {
   margin-bottom: 0.8rem;
+  font-size: 2rem;
 }
 
 #landing #landing-text #landing-p2 {
   margin-bottom: 0.8rem;
   font-size: 2rem;
-  -webkit-animation: text1 6s 1;
-          animation: text1 6s 1;
+  -webkit-animation: text1 7s 1;
+          animation: text1 7s 1;
 }
 
 #landing #landing-text #landing-p3 {
   font-size: 1.4rem;
   margin-bottom: 1.4rem;
-  -webkit-animation: text2 6s 1;
-          animation: text2 6s 1;
   display: none;
 }
 
@@ -265,8 +265,8 @@ body {
   border-radius: 5px;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  -webkit-animation: text2 6s 1;
-          animation: text2 6s 1;
+  -webkit-animation: text2 7s 1;
+          animation: text2 7s 1;
 }
 
 #landing #landing-text .buttons-container #hire-me {
@@ -350,7 +350,7 @@ body {
 #about .about-container .about-text h1 {
   font-size: 2rem;
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   color: #27272b88;
 }
 
@@ -900,6 +900,12 @@ body {
   #about .about-skills {
     width: 90%;
   }
+  #contact .contact-container {
+    width: 70%;
+  }
+  #contact .contact-container form {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -907,7 +913,6 @@ body {
     height: 70%;
     right: 0;
     bottom: 0;
-    left: 0;
   }
   #about .about-container {
     width: 90%;
@@ -999,7 +1004,6 @@ body {
     height: 70%;
     right: 0;
     bottom: 0;
-    left: 0;
   }
   #about .about-container {
     width: 90%;
@@ -1071,7 +1075,7 @@ body {
     height: 70%;
     right: 0;
     bottom: 0;
-    left: -30%;
+    left: -10%;
   }
   #about {
     padding: 4rem 0;
@@ -1159,7 +1163,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
   #landing #landing-img {
     display: none;
   }
