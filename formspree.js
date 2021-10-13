@@ -1,4 +1,4 @@
-var form = document.getElementById("contact-form");
+let form = document.getElementById("contact-form");
 
 const messageP = document.querySelector("#my-form-status");
 let opacity = 1;
@@ -6,7 +6,6 @@ let opacity = 1;
 const displayMessage = () => {
     messageP.style.opacity = `${opacity}`;
     messageP.style.transition = "all 0.6s ease";
-
 
     console.log(opacity);
     
@@ -23,7 +22,7 @@ const displayMessage = () => {
     
 async function handleSubmit(event) {
   event.preventDefault();
-  var data = new FormData(event.target);
+  let data = new FormData(event.target);
   console.log(data);
   fetch(event.target.action, {
     method: form.method,

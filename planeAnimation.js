@@ -1,15 +1,16 @@
+gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
+
 const widthScr = window.innerWidth;
 
 const breakpointLarge = [
-    {x : 150, y : -20},
-    {x : 250, y : 10},
-    {x : 300, y : 30},
-    {x : 550, y : 200},
-    {x : 650, y : -10},
-    {x : 350, y : -10},
-    {x : 750, y : 150},
-    {x : 1100, y : 0},
-    {x : window.innerWidth - 300, y : 0}
+    {x: 0, y: 10},
+    {x: 300, y: 100},
+    {x: 600, y: 300},
+    {x: 850, y: -100},
+    {x: 500, y: -100},
+    {x: 350, y: 200},
+    {x: 900, y: 300},
+    {x : window.innerWidth, y : -300}
 ];
 
 const breakpoint1440 = [
@@ -37,19 +38,17 @@ const breakpointsValue = window.innerWidth > 1440 ? breakpointLarge :
                         breakpointLarge;
 
 const flightPath = {
-    curviness : 1.5,
+    curviness : 1,
     autoRotate : true,
-    values : breakpointsValue,
+    path : breakpointsValue,
 };
 
-const tween = new TimelineLite();
-
-tween.add(
-    TweenLite.to('.plane', 1, {
-        bezier : flightPath,
-        ease : Power1.ease
-    })
-);
+const tween = gsap.timeline();
+tween.to(".plane", {
+  duration: 1000,
+  ease: Power1.easeInOut,
+  motionPath: flightPath,
+});
 
 const controller = new ScrollMagic.Controller();
 
