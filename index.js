@@ -125,6 +125,11 @@ document.querySelector("#logo").addEventListener("click", () => {
 });
 
 menuBtn.addEventListener("click", handleMobileMenu);
+
+document.querySelector("#logo").addEventListener("click", () => {
+    location.realod();
+    chooseActiveNavLink(landingLink);
+})
 /*--------------------------------------------*/
 /*---------------SVG-ANIMATIONS---------------*/
 /*--------------------------------------------*/
