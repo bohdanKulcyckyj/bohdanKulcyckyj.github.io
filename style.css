@@ -537,7 +537,7 @@ p {
 }
 
 #projects:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -611,7 +611,8 @@ p {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#projects .projects-container .cards .flip-card .flip-card-inner .flip-card-front, #projects .projects-container .cards .flip-card .flip-card-inner .flip-card-back {
+#projects .projects-container .cards .flip-card .flip-card-inner .flip-card-front,
+#projects .projects-container .cards .flip-card .flip-card-inner .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -813,7 +814,8 @@ p {
   transition: all 1s ease;
 }
 
-#contact .contact-container form .input-container input, #contact .contact-container form .input-container textarea {
+#contact .contact-container form .input-container input,
+#contact .contact-container form .input-container textarea {
   width: 100%;
   font-size: 20px !important;
   padding: 0.5rem;
@@ -827,22 +829,26 @@ p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-#contact .contact-container form .input-container input::-webkit-input-placeholder, #contact .contact-container form .input-container textarea::-webkit-input-placeholder {
+#contact .contact-container form .input-container input::-webkit-input-placeholder,
+#contact .contact-container form .input-container textarea::-webkit-input-placeholder {
   color: #f0f0f0;
   font-size: 20px !important;
 }
 
-#contact .contact-container form .input-container input:-ms-input-placeholder, #contact .contact-container form .input-container textarea:-ms-input-placeholder {
+#contact .contact-container form .input-container input:-ms-input-placeholder,
+#contact .contact-container form .input-container textarea:-ms-input-placeholder {
   color: #f0f0f0;
   font-size: 20px !important;
 }
 
-#contact .contact-container form .input-container input::-ms-input-placeholder, #contact .contact-container form .input-container textarea::-ms-input-placeholder {
+#contact .contact-container form .input-container input::-ms-input-placeholder,
+#contact .contact-container form .input-container textarea::-ms-input-placeholder {
   color: #f0f0f0;
   font-size: 20px !important;
 }
 
-#contact .contact-container form .input-container input::placeholder, #contact .contact-container form .input-container textarea::placeholder {
+#contact .contact-container form .input-container input::placeholder,
+#contact .contact-container form .input-container textarea::placeholder {
   color: #f0f0f0;
   font-size: 20px !important;
 }
@@ -856,7 +862,8 @@ p {
   margin-bottom: 1.2rem;
 }
 
-#contact .contact-container form .input-container input, #contact .contact-container form .input-container textarea {
+#contact .contact-container form .input-container input,
+#contact .contact-container form .input-container textarea {
   color: #f0f0f0;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -955,12 +962,18 @@ p {
   font-size: 0.8rem;
 }
 
+@media only screen and (max-width: 1600px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   h1 {
-    font-size: 30px;
+    font-size: 24px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
   #landing #landing-img {
     height: 80%;
@@ -991,7 +1004,7 @@ p {
 
 @media only screen and (max-width: 1024px) {
   h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
   h2 {
     font-size: 22px;
@@ -1034,7 +1047,8 @@ p {
   #contact .contact-container {
     width: 80%;
   }
-  #contact .contact-container span, #contact .contact-container form {
+  #contact .contact-container span,
+  #contact .contact-container form {
     width: 70%;
   }
 }
@@ -1120,7 +1134,8 @@ p {
   #contact .contact-container {
     width: 80%;
   }
-  #contact .contact-container span, #contact .contact-container form {
+  #contact .contact-container span,
+  #contact .contact-container form {
     width: 70%;
   }
 }
@@ -1237,7 +1252,8 @@ p {
     width: 100%;
     margin: 0;
   }
-  #contact .contact-container form .input-container input, #contact .contact-container form .input-container textarea {
+  #contact .contact-container form .input-container input,
+  #contact .contact-container form .input-container textarea {
     width: 100% !important;
   }
   #footer {
@@ -1278,7 +1294,8 @@ p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #landing #landing-text .buttons-container #cv, #landing #landing-text .buttons-container #hire-me {
+  #landing #landing-text .buttons-container #cv,
+  #landing #landing-text .buttons-container #hire-me {
     width: 8rem;
   }
   #landing #landing-img {
@@ -1353,12 +1370,14 @@ p {
           animation: underscore 1.5s infinite;
 }
 
-#terminal, #app-in-production {
+#terminal,
+#app-in-production {
   opacity: 0;
 }
 
 @-webkit-keyframes underscore {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
@@ -1367,7 +1386,8 @@ p {
 }
 
 @keyframes underscore {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {

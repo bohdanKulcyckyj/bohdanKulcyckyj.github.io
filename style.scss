@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 //Colors
 $green: #0ee09a;
 $white: #f0f0f0;
 $whitePaper: #f1f1f1;
 $darkblue: #2d2836;
 $dark: #27272b;
-$darkLT: #27272be5;//LT = light transparent
-$darkMT: #27272b88;//MT = medium transparent
-$darkHT: #27272b21;//HT = high transparent
+$darkLT: #27272be5; //LT = light transparent
+$darkMT: #27272b88; //MT = medium transparent
+$darkHT: #27272b21; //HT = high transparent
 //Fonts
 $kanit: "Kanit", Verdana, sans-serif;
 $pixelFont: "Press Start 2P", Verdana, sans-serif;
-$mainFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$mainFont: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
 * {
   padding: 0;
@@ -170,32 +171,33 @@ p {
         background: $white;
         border-radius: 5px;
         transition: all 0.5s ease-in-out;
-        &::before, &::after {
-            content: "";
-            position: absolute;
-            width: 40px;
-            height: 3px;
-            background: $white;
-            border-radius: 5px;
-            transition: all 0.5s ease-in-out;
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 3px;
+          background: $white;
+          border-radius: 5px;
+          transition: all 0.5s ease-in-out;
         }
         &::before {
-            transform: translateY(-14px);
+          transform: translateY(-14px);
         }
         &::after {
-            transform: translateY(14px);
+          transform: translateY(14px);
         }
       }
       &.open {
         #menu-btn {
-            transform: translateX(-50px);
-            background: transparent;
-            &::before {
-                transform: rotate(45deg) translate(35px, -35px);
-            }
-            &::after {
-                transform: rotate(-45deg) translate(35px, 35px);
-            }
+          transform: translateX(-50px);
+          background: transparent;
+          &::before {
+            transform: rotate(45deg) translate(35px, -35px);
+          }
+          &::after {
+            transform: rotate(-45deg) translate(35px, 35px);
+          }
         }
       }
     }
@@ -211,7 +213,7 @@ p {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow:  hidden;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -403,7 +405,7 @@ p {
 #projects {
   position: relative;
   width: 100%;
-  overflow:  hidden;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,7 +414,7 @@ p {
   background-position: bottom;
   background-attachment: fixed;
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -460,8 +462,9 @@ p {
           height: 100%;
           transition: transform 0.8s;
           transform-style: preserve-3d;
-          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-          .flip-card-front, .flip-card-back {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          .flip-card-front,
+          .flip-card-back {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -540,7 +543,7 @@ p {
                 }
               }
             }
-          } 
+          }
         }
         &:hover {
           .flip-card-inner {
@@ -572,7 +575,7 @@ p {
     position: relative;
     font-family: $pixelFont;
   }
-  p{
+  p {
     text-align: center;
     font-size: 1.4rem;
   }
@@ -612,7 +615,8 @@ p {
         width: 100%;
         margin: 0 0 1.5rem;
         transition: all 1s ease;
-        input, textarea {
+        input,
+        textarea {
           width: 100%;
           font-size: 20px !important;
           padding: 0.5rem;
@@ -635,14 +639,15 @@ p {
           height: 7rem;
           margin-bottom: 1.2rem;
         }
-        input, textarea {
+        input,
+        textarea {
           color: $white;
           backdrop-filter: blur(10px);
-          background-color: rgba(14,224,154, 0.238);
+          background-color: rgba(14, 224, 154, 0.238);
           box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-          border: 2px rgba(255,255,255,0.4) solid;
-          border-bottom: 2px rgba(40,40,40,0.35) solid;
-          border-right: 2px rgba(40,40,40,0.35) solid;
+          border: 2px rgba(255, 255, 255, 0.4) solid;
+          border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+          border-right: 2px rgba(40, 40, 40, 0.35) solid;
           border-left: 5px solid $white;
         }
       }
@@ -659,9 +664,9 @@ p {
         color: $white;
         transition: all 0.5s ease;
         box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-        border: 2px rgba(255,255,255,0.4) solid;
-        border-bottom: 2px rgba(40,40,40,0.35) solid;
-        border-right: 2px rgba(40,40,40,0.35) solid;
+        border: 2px rgba(255, 255, 255, 0.4) solid;
+        border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+        border-right: 2px rgba(40, 40, 40, 0.35) solid;
         transition: all 0.5s ease-out;
         &:hover {
           border-color: $white;
@@ -722,12 +727,18 @@ p {
 
 //Media Queries starts
 
+@media only screen and (max-width: 1600px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   h1 {
-    font-size: 30px;
+    font-size: 24px; //30px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
   #landing {
     #landing-img {
@@ -766,7 +777,7 @@ p {
 
 @media only screen and (max-width: 1024px) {
   h1 {
-    font-size: 28px;
+    font-size: 24px; //28px;
   }
   h2 {
     font-size: 22px;
@@ -814,7 +825,8 @@ p {
     height: auto;
     .contact-container {
       width: 80%;
-      span, form {
+      span,
+      form {
         width: 70%;
       }
     }
@@ -895,7 +907,8 @@ p {
     height: auto;
     .contact-container {
       width: 80%;
-      span, form {
+      span,
+      form {
         width: 70%;
       }
     }
@@ -1009,7 +1022,8 @@ p {
         width: 100%;
         margin: 0;
         .input-container {
-          input, textarea {
+          input,
+          textarea {
             width: 100% !important;
           }
         }
@@ -1054,7 +1068,8 @@ p {
       .buttons-container {
         width: 100%;
         flex-wrap: wrap;
-        #cv, #hire-me {
+        #cv,
+        #hire-me {
           width: 8rem;
         }
       }
@@ -1128,12 +1143,14 @@ p {
   animation: underscore 1.5s infinite;
 }
 
-#terminal, #app-in-production {
+#terminal,
+#app-in-production {
   opacity: 0;
 }
 
 @keyframes underscore {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
@@ -1148,10 +1165,10 @@ p {
   10% {
     opacity: 0;
   }
-  15%{
+  15% {
     opacity: 1;
   }
-  20%{
+  20% {
     opacity: 0;
   }
   25% {
@@ -1188,13 +1205,13 @@ p {
 }
 
 @keyframes citeMove {
-  0%{
+  0% {
     transform: rotate(-5deg);
   }
-  50%{
+  50% {
     transform: rotate(2deg);
   }
-  100%{
+  100% {
     transform: rotate(0deg);
   }
 }
