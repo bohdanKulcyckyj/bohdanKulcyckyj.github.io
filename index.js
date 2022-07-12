@@ -26,6 +26,8 @@ const additionalOffset = 400;
 const menuBtn = document.querySelector("#menu-btn-container");
 const nav = document.querySelector('#navigation');
 let menuOpen = false;
+//Automatically up to date year in footer
+document.querySelector("#copyright-year").innerHTML = new Date().getFullYear();
 //Switch Loading Screen and Landing Page
 function handlePageOnload() {
     let source = window.getComputedStyle(landing).backgroundImage;
