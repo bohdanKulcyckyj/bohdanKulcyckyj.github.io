@@ -533,6 +533,9 @@ p {
             .links {
               flex: 1;
               text-align: center;
+              display: flex;
+              flex-direction: row-reverse;
+              justify-content: center;
               a {
                 margin: 0 0.5rem;
                 color: inherit;
@@ -540,6 +543,7 @@ p {
                 img {
                   height: 2rem;
                   width: auto;
+                  color: white;
                 }
               }
             }
